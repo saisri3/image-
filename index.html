@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown Navbar</title>
+    <script>
+      console.log(location);
+    </script>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .navbar {
+        background-color: #333;
+        overflow: hidden;
+      }
+      .navbar select {
+        background-color: #333;
+        color: white;
+        padding: 14px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .navbar select option {
+        color: black;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <!-- <p style="color: rgb(136, 81, 13);">this is styling</p> -->
+      <select onchange="location = this.value;">
+        <option value="" selected>Select Page</option>
+        <option value="demo1.html">Home</option>
+        <option value="demo3.html">About</option>
+        <option value="demo2.html">Services</option>
+        <option value="6-forms.html">Contact</option>
+        <p></p>
+      </select>
+    </div>
+  </body>
+</html>
